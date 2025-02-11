@@ -1,0 +1,191 @@
+header {
+    background: rgba(85, 186, 248, 0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #575656;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #e8fbff;
+}
+
+.menu-image {
+    width: 45px;
+    height: auto;
+    margin-left: 600px;
+}
+
+body {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background:linear-gradient(to right, #ffffff, #daf1fc, #9ddcf9);
+}
+
+h1 {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid rgb(0, 204, 255);
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+h2 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: justify;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(0, 204, 255);
+}
+
+p{
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    overflow-x: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgreen;
+    color: black;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid #000000;
+}
+.sec{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.timeline-section {
+    border: 2px solid #000;
+    background: linear-gradient(to left, #ffffff, #c5f6df, #8aded3);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 8px;
+}
+
+.timeline-section h3 {
+    color: #333;
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bullet-list li {
+    color: #000000;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.bullet-list li::marker {
+    color: #dd4e15;
+}
+
+.numbered-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.numbered-list li {
+    color: #000000;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.numbered-list li::marker {
+    color: #dd4e15;
+}
+
+.enlaces-interes {
+    text-align: left;
+}
+
+.biography-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.floating-image {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 300px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.biography-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Ensure text wraps properly around the floating image */
+.biography-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
