@@ -1,43 +1,95 @@
+<!-- Declaración del tipo de documento HTML 5 -->
 <!DOCTYPE html>
+<!-- Inicio del documento HTML con especificación del idioma en inglés -->
 <html lang="en">
 <head>
-    <link href="estilos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&display=swap" rel="stylesheet">
+    <!-- Configuración de codificación de caracteres UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Configuración de la vista para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Metadatos para control de caché -->
+    <!-- Control de caché del navegador:
+         - Previene el almacenamiento en caché
+         - Fuerza la recarga de la página
+         - Establece expiración inmediata -->
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <!-- Metadatos para indexación -->
+    <!-- Configuración para motores de búsqueda: permite indexación y seguimiento de enlaces -->
     <meta name="robots" content="index, follow">
+
+    <!-- Título de la página que aparece en la pestaña del navegador -->
     <title>Isaac Newton Fan Page</title>
+
+    <!-- Importación de fuentes de Google Fonts:
+         - Oswald (normal 400 y negrita 700)
+         - Audiowide
+         - Sofia
+         - Trirong -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&display=swap" rel="stylesheet">
+
+    <!-- Vinculación con hoja de estilos externa -->
+    <link href="estilos.css" rel="stylesheet">
 </head>
 <body>
+<!-- Encabezado de la página -->
 <header>
+    <!-- Barra de navegación -->
     <nav>
+        <!-- Lista de navegación con enlaces a las diferentes secciones -->
         <ul>
             <li><a href="index.html">Bienvenida</a></li>
             <li><a href="datos-biograficos.html">Datos Biográficos</a></li>
             <li><a href="cronologia.html">Cronología</a></li>
             <li><a href="material-de-interes.html">Material de Interés</a></li>
+            <!-- Imagen decorativa del menú -->
             <img src="Manzana.png" alt="Imagen del menú" class="menu-image">
         </ul>
     </nav>
 </header>
-<h1>Bienvenidos</h1>
-<div class="biography-section">
-    <img src="Newton.jpg" alt="Retrato de Isaac Newton" class="floating-image">
-    <p>Sir Isaac Newton fue uno de los científicos más influyentes de todos los tiempos. Sus contribuciones revolucionarias a la física, las matemáticas y la astronomía sentaron las bases de la ciencia moderna. Nacido en 1643 en Woolsthorpe, Inglaterra, Newton demostró desde temprana edad una extraordinaria capacidad para el pensamiento analítico y la observación sistemática.</p>
+<main> <!-- Elemento principal -->
+    <!-- Título principal de la página -->
+    <h1>Bienvenidos</h1>
 
-    <p>Durante su tiempo en la Universidad de Cambridge, Newton desarrolló sus teorías fundamentales sobre la luz, el movimiento y las matemáticas. La leyenda cuenta que la inspiración para su teoría de la gravedad surgió al observar la caída de una manzana en el huerto familiar, aunque la realidad es que sus descubrimientos fueron el resultado de años de meticuloso trabajo y experimentación.</p>
+    <!-- Sección principal con la biografía de Newton -->
+    <article class="biography-section">
+        <!-- Imagen flotante de Newton -->
+        <img src="Newton.jpg"
+             alt="Retrato de Sir Isaac Newton, científico británico del siglo XVII"
+             class="floating-image"
+             width="300"
+             height="400">
 
-    <p>Sus "Principia Mathematica", publicados en 1687, representan uno de los trabajos más importantes en la historia de la ciencia. En esta obra maestra, Newton estableció las tres leyes del movimiento y la ley de la gravitación universal, explicando tanto el movimiento de los planetas como la caída de los objetos en la Tierra.</p>
+        <!-- Párrafos con información biográfica sobre Newton -->
+        <p>Sir Isaac Newton fue uno de los científicos más influyentes de todos los tiempos. Sus contribuciones
+            revolucionarias a la física, las matemáticas y la astronomía sentaron las bases de la ciencia moderna.
+            Nacido en
+            1643 en Woolsthorpe, Inglaterra, Newton demostró desde temprana edad una extraordinaria capacidad para el
+            pensamiento analítico y la observación sistemática.</p>
 
-    <p>Además de sus contribuciones a la física, Newton realizó avances significativos en matemáticas, desarrollando el cálculo diferencial e integral, aunque Leibniz lo desarrolló independientemente en la misma época. Sus experimentos con la luz llevaron al descubrimiento de que la luz blanca está compuesta por un espectro de colores, y diseñó el primer telescopio reflector práctico.</p>
+        <p>Durante su tiempo en la Universidad de Cambridge, Newton desarrolló sus teorías fundamentales sobre la luz,
+            el
+            movimiento y las matemáticas. La leyenda cuenta que la inspiración para su teoría de la gravedad surgió al
+            observar la caída de una manzana en el huerto familiar, aunque la realidad es que sus descubrimientos fueron
+            el
+            resultado de años de meticuloso trabajo y experimentación.</p>
 
-    <p>Como Director de la Casa de la Moneda, Newton también contribuyó significativamente a la economía británica, estableciendo el patrón oro y persiguiendo activamente a los falsificadores. Su capacidad para aplicar el pensamiento riguroso y sistemático en diferentes campos demuestra la versatilidad de su genio.</p>
-</div>
+        <p>Sus "Principia Mathematica", publicados en 1687, representan uno de los trabajos más importantes en la
+            historia
+            de la ciencia. En esta obra maestra, Newton estableció las tres leyes del movimiento y la ley de la
+            gravitación
+            universal, explicando tanto el movimiento de los planetas como la caída de los objetos en la Tierra.</p>
+
+        <p>Además de sus contribuciones a la física, Newton realizó avances significativos en matemáticas, desarrollando
+            el
+            cálculo diferencial e integral, aunque Leibniz lo desarrolló independientemente en la misma época. Sus
+            experimentos con la luz llevaron al descubrimiento de que la luz blanca está compuesta por un espectro de
+            colores, y diseñó el primer telescopio reflector práctico.</p>
+
+        <p>Como Director de la Casa de la Moneda, Newton también contribuyó significativamente a la economía británica,
+            estableciendo el patrón oro y persiguiendo activamente a los falsificadores. Su capacidad para aplicar el
+            pensamiento riguroso y sistemático en diferentes campos demuestra la versatilidad de su genio.</p>
+    </article>
+</main>
 </body>
 </html>

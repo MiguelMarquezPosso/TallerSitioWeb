@@ -1,38 +1,64 @@
+<!-- Declaración del tipo de documento HTML5 -->
 <!DOCTYPE html>
+<!-- Inicio del documento HTML con especificación del idioma en inglés -->
 <html lang="en">
 <head>
-    <link href="estilos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&display=swap" rel="stylesheet">
+    <!-- Configuración de codificación de caracteres UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Configuración de la vista para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Metadatos para control de caché -->
+    <!-- Control de caché del navegador:
+         - Previene el almacenamiento en caché
+         - Fuerza la recarga de la página
+         - Establece expiración inmediata -->
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <!-- Metadatos para indexación -->
+    <!-- Configuración para motores de búsqueda: permite indexación y seguimiento de enlaces -->
     <meta name="robots" content="index, follow">
+
+    <!-- Título de la página que aparece en la pestaña del navegador -->
     <title>Isaac Newton Fan Page</title>
+
+    <!-- Importación de fuentes Google Fonts:
+         - Oswald (normal 400 y negrita 700)
+         - Audiowide
+         - Sofia
+         - Trirong -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&display=swap" rel="stylesheet">
+
+    <!-- Vinculación con hoja de estilos externa -->
+    <link href="estilos.css" rel="stylesheet">
 </head>
+
 <body>
+<!-- Encabezado de la página -->
 <header>
+    <!-- Barra de navegación -->
     <nav>
+        <!-- Lista de enlaces de navegación -->
         <ul>
             <li><a href="index.html">Bienvenida</a></li>
             <li><a href="datos-biograficos.html">Datos Biográficos</a></li>
             <li><a href="cronologia.html">Cronología</a></li>
             <li><a href="material-de-interes.html">Material de Interés</a></li>
+            <!-- Imagen decorativa del menú -->
             <img src="Manzana.png" alt="Imagen del menú" class="menu-image">
         </ul>
     </nav>
 </header>
 
+<!-- Título principal de la página -->
 <h1>Material de Interes</h1>
-<p>A continuación, se encuentra más información de interés que puede resultar útil para comprender mejor la historia de Isaac Newton.</p>
+<!-- Párrafo introductorio -->
+<p>A continuación, se encuentra más información de interés que puede resultar útil para comprender mejor la historia de
+    Isaac Newton.</p>
 
-<!-- Videos favoritos incrustados -->
+<!-- Sección de videos principales -->
 <section class="video-principal">
     <h2>Videos Favoritos</h2>
+    <!-- Video de YouTube incrustado con configuraciones de seguridad -->
     <iframe
             width="560"
             height="315"
@@ -44,10 +70,11 @@
     </iframe>
 </section>
 
-<!-- Enlaces de interés -->
+<!-- Sección de enlaces externos relevantes -->
 <section class="enlaces-interes">
     <h2>Enlaces de Interés</h2>
     <ul>
+        <!-- Enlaces a videos externos que se abren en una nueva pestaña -->
         <li>
             <a href="https://youtu.be/m8NBT0SL5CA" target="_blank">
                 Video sobre las leyes de Newton
@@ -61,11 +88,12 @@
     </ul>
 </section>
 
-<!-- Sección para imágenes locales -->
+<!-- Sección de galería de imágenes -->
 <section class="galeria-imagenes">
     <h2>Galería de Imágenes</h2>
+    <!-- Contenedor para las imágenes de la galería -->
     <div class="contenedor-imagenes">
-        <!-- Reemplaza 'ruta-imagen1.jpg' con las rutas reales de tus imágenes -->
+        <!-- Imagen local con texto alternativo para accesibilidad -->
         <img src="Fisica.png" alt="Física">
     </div>
 </section>
