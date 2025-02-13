@@ -1,5 +1,5 @@
 // Esperar a que el DOM esté completamente cargado
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Obtener todos los enlaces del menú de navegación interna
     const internalLinks = document.querySelectorAll('.internal-nav a');
 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Agregar evento click a cada enlace para el desplazamiento suave
     internalLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
 
             // Obtener el ID del elemento objetivo desde el href
@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Agregar eventos mouseenter y mouseleave a cada sección
     sections.forEach(section => {
-        section.addEventListener('mouseenter', function() {
+        section.addEventListener('mouseenter', function () {
             // Guardar las clases originales
             this.originalClassName = this.className;
             // Aplicar la clase de resaltado
             this.className = 'timeline-section-highlight';
         });
 
-        section.addEventListener('mouseleave', function() {
+        section.addEventListener('mouseleave', function () {
             // Restaurar las clases originales
             this.className = this.originalClassName;
         });

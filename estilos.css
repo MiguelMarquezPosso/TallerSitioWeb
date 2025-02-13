@@ -3,8 +3,8 @@ header {
     width: 100%;
     position: fixed;
     z-index: 100;
-    top: 0;    /* Asegura que el header esté en la parte superior */
-    left: 0;    /* Asegura que el header ocupe todo el ancho */
+    top: 0; /* Asegura que el header esté en la parte superior */
+    left: 0; /* Asegura que el header ocupe todo el ancho */
 }
 
 nav {
@@ -48,7 +48,7 @@ body {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-    background:linear-gradient(to right, #ffffff, #daf1fc, #9ddcf9);
+    background: linear-gradient(to right, #ffffff, #daf1fc, #9ddcf9);
 }
 
 h1 {
@@ -69,13 +69,15 @@ h2 {
     padding-bottom: 2px;
     border-bottom: 2px solid rgb(0, 204, 255);
 }
+
 h3 {
     color: #333;
     font-size: 24px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
-p{
+
+p {
     color: black;
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
@@ -113,7 +115,8 @@ td {
     padding: 10px;
     border: 2px solid #000000;
 }
-.sec{
+
+.sec {
     text-align: left;
     margin-left: 20px;
 }
@@ -211,7 +214,7 @@ td {
     padding: 20px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .chat-form {

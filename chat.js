@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const chatForm = document.getElementById('chatForm');
     const messagesContainer = document.getElementById('messagesContainer');
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Manejar el envío del formulario
-    chatForm.addEventListener('submit', function(e) {
+    chatForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const senderField = document.getElementById('sender');
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const fieldElement = document.getElementById(field);
         const errorElement = document.getElementById(error);
 
-        fieldElement.addEventListener('input', function() {
+        fieldElement.addEventListener('input', function () {
             validateField(fieldElement, errorElement);
         });
     });

@@ -3,53 +3,53 @@
 <!-- Inicio del documento HTML con especificación del idioma en inglés -->
 <html lang="en">
 <head>
-  <!-- Configuración de codificación de caracteres UTF-8 -->
-  <meta charset="UTF-8">
-  <!-- Configuración de la vista para dispositivos móviles -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Control de caché del navegador:
-       - Previene el almacenamiento en caché
-       - Fuerza la recarga de la página
-       - Establece expiración inmediata -->
-  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <!-- Configuración para motores de búsqueda: permite indexación y seguimiento de enlaces -->
-  <meta name="robots" content="index, follow">
+    <!-- Configuración de codificación de caracteres UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configuración de la vista para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Control de caché del navegador:
+         - Previene el almacenamiento en caché
+         - Fuerza la recarga de la página
+         - Establece expiración inmediata -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- Configuración para motores de búsqueda: permite indexación y seguimiento de enlaces -->
+    <meta name="robots" content="index, follow">
 
-  <!-- Título de la página que aparece en la pestaña del navegador -->
-  <title>Isaac Newton Fan Page</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Isaac Newton Fan Page</title>
 
-  <!-- Importación de fuentes Google Fonts:
-       - Oswald (normal 400 y negrita 700)
-       - Audiowide
-       - Sofia
-       - Trirong -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&display=swap" rel="stylesheet">
+    <!-- Importación de fuentes Google Fonts:
+         - Oswald (normal 400 y negrita 700)
+         - Audiowide
+         - Sofia
+         - Trirong -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&display=swap" rel="stylesheet">
 
-  <!-- Vinculación con hoja de estilos externa -->
-  <link href="estilos.css" rel="stylesheet">
-  <!-- Vinculación con archivo de JavaScript externo -->
-  <script src="chat.js"></script>
+    <!-- Vinculación con hoja de estilos externa -->
+    <link href="estilos.css" rel="stylesheet">
+    <!-- Vinculación con archivo de JavaScript externo -->
+    <script src="chat.js"></script>
 </head>
 
 <body>
 <!-- Encabezado de la página -->
 <header>
-  <!-- Barra de navegación -->
-  <nav>
-    <!-- Lista de enlaces de navegación -->
-    <ul>
-      <li><a href="index.html">Bienvenida</a></li>
-      <li><a href="datos-biograficos.html">Datos Biográficos</a></li>
-      <li><a href="cronologia.html">Cronología</a></li>
-      <li><a href="material-de-interes.html">Material de Interés</a></li>
-      <li><a href="chat.html">Chat</a></li>
-      <!-- Imagen decorativa del menú -->
-      <img src="Manzana.png" alt="Imagen del menú" class="menu-image">
-    </ul>
-  </nav>
+    <!-- Barra de navegación -->
+    <nav>
+        <!-- Lista de enlaces de navegación -->
+        <ul>
+            <li><a href="index.html">Bienvenida</a></li>
+            <li><a href="datos-biograficos.html">Datos Biográficos</a></li>
+            <li><a href="cronologia.html">Cronología</a></li>
+            <li><a href="material-de-interes.html">Material de Interés</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <!-- Imagen decorativa del menú -->
+            <img src="Manzana.png" alt="Imagen del menú" class="menu-image">
+        </ul>
+    </nav>
 </header>
 
 <!-- Título principal de la página -->
@@ -58,25 +58,25 @@
 <p>A continuación, se encuentra un chat para que pueda enviar mensajes.</p>
 
 <div class="chat-container">
-  <form id="chatForm" class="chat-form">
-    <div class="form-group">
-      <label for="sender">Nombre del Remitente:</label>
-      <input type="text" id="sender" name="sender">
-      <span class="error-message" id="senderError">El nombre del remitente es requerido</span>
+    <form id="chatForm" class="chat-form">
+        <div class="form-group">
+            <label for="sender">Nombre del Remitente:</label>
+            <input type="text" id="sender" name="sender">
+            <span class="error-message" id="senderError">El nombre del remitente es requerido</span>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <span class="error-message" id="messageError">El mensaje es requerido</span>
+        </div>
+
+        <button type="submit" class="submit-button">Enviar Mensaje</button>
+    </form>
+
+    <div id="messagesContainer" class="messages-container">
+        <!-- Los mensajes se insertarán aquí -->
     </div>
-
-    <div class="form-group">
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-      <span class="error-message" id="messageError">El mensaje es requerido</span>
-    </div>
-
-    <button type="submit" class="submit-button">Enviar Mensaje</button>
-  </form>
-
-  <div id="messagesContainer" class="messages-container">
-    <!-- Los mensajes se insertarán aquí -->
-  </div>
 </div>
 </body>
 </html>
